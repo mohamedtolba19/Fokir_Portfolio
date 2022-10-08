@@ -1,0 +1,545 @@
+:root
+{
+    --main-color:#ff305b;
+}
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+ 
+}
+.navbar{
+
+  z-index: 99999999999;
+    padding: 0;
+   
+}
+
+.navbar-brand
+{
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover
+{
+    color: var(--main-color);
+
+}
+nav .active
+{
+    color: var(--main-color) !important ;
+}
+.nav-a
+{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: color 1s;
+    margin-left: 3px;
+  padding: 5px;
+}
+.nav-a:hover
+{
+    color: var(--main-color);
+}
+header
+{
+    background-image: url(../img/slider/slider-01.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.layer
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+}
+.intro span
+{
+  font-size: 24px; 
+  font-weight: 600; 
+  letter-spacing: 1px;
+}
+.intro h1
+{
+  font-size: 70px ;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.intro p 
+{
+    font-size: 26px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.intro p::after
+{
+    content: " |";
+    animation-name: typing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    font-weight: 800;
+    letter-spacing: 2px;
+    
+}
+@keyframes typing 
+{
+0% {content: " |";}
+3% {content: " D |";}
+6% {content: " De |";}
+9% {content: " Dev |";}
+12% {content: " Deve |";}
+15% {content: " Devel |";}
+18% {content: " Develo |";}
+21% {content: " Develop |";}
+24% {content: " Develope |";}
+27% {content: " Developer |";}
+32% {content: " Develope |";}
+33% {content: " Develop |";}
+36% {content: " Develo |";}
+39% {content: " Devel |";}
+42% {content: " Deve |";}
+45% {content: " Dev |";}
+48% {content: " De |";}
+51% {content: " D |";}
+54% {content: " |";}
+57% {content: " D |";}
+60% {content: " De |";}
+63% {content: " Des |";}
+66% {content: " Desi |";}
+69% {content: " Desig |";}
+72% {content: " Design |";}
+75% {content: " Designe |";}
+78% {content: " Desinger |";}
+83% {content: " Designe |";}
+84% {content: " Design |";}
+87% {content: " Desig |";}
+90% {content: " Desi |";}
+93% {content: " Des |";}
+96% {content: " De |";}
+98% {content: " D |";}
+100% {content: "  |";}
+}
+
+.profile
+{
+
+  height: 450px;
+  border: solid 8px #555555;
+  position: relative;
+  width: 75%;
+}
+.profile-img
+{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.profile-icons
+{
+    background-color: rgba(0, 0, 0, 0.57);
+    
+    height: 1%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  opacity: 0;
+   transition: opacity  , 1s ;
+
+
+}
+.profile-icons i 
+{
+    margin-right: 25px;
+    font-size: 20px;
+    
+}
+.profile-icons i:hover
+{
+    color: var(--main-color);
+}
+.profile-img:hover .profile-icons 
+
+{
+opacity: 1;
+
+height: 100%;
+top: 0;
+}
+.about span 
+{
+    color: var(--main-color);
+}
+.about p 
+{
+    font-size: 18px;
+    border-bottom: #555555 dashed 1px;
+    padding-bottom: 25px;
+}
+.info ul 
+{
+
+    list-style-type: none;
+    text-align: start;
+    padding: 0;
+}
+.info ul li
+{
+
+    padding: 8px 0px;
+    padding-right: 50px;
+
+}
+.info ul li a
+{
+ color: #555555;
+
+}
+.info ul span
+{
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+.about button
+{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+}
+.about button:hover
+{
+    color: white;
+    background-color: #f30534;
+}
+.about button a 
+{
+    text-decoration: none;
+    color: white;
+}
+.services 
+{
+    background-color: whitesmoke;
+}
+
+.services h2 
+{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.service h3 
+{
+    font-size: 25px;
+}
+
+.brdr
+{
+    width: 160px;
+    height: 1px;
+    background-color: var(--main-color);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+   
+    
+}
+.brdr::before
+{
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom : 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+}
+.brdr::after
+{
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+}
+
+
+.service-icon 
+{
+    color: var(--main-color);
+    font-size: 36px;
+    padding: 20px;
+}
+.service
+{
+    transition: transform 1s;
+}
+.service:hover
+{
+    background-color: white;
+    transform: scale(1.1);
+}
+.service-icon
+{
+    transition: transform 2s;
+}
+ .service:hover .service-icon
+ {
+    transform: rotate(360deg);
+ } 
+
+ .portfolio h2 
+ {
+     font-size: 30px;
+     font-weight: 800;
+     line-height: 30px;
+     text-transform: capitalize;
+ }
+ .active 
+ {
+    color: #f30534 !important;
+ }
+ .nav-link
+{
+    font-size: 20px;
+    border: white 1px solid !important;
+}
+.layer2
+{
+    width: 100%;
+    height: 100%;
+    position: absolute ;
+    top: 0;
+    left: 0;
+    background-color: #555555;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.portofolio-img:hover .layer2
+{
+    opacity: 0.5;
+}
+.layer2 i 
+{
+    color: #ff0033;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 20px;
+}
+.container-fluid 
+{
+    background-color: whitesmoke;
+}
+
+.portfolio-icon 
+{
+    color: var(--main-color);
+    font-size: 36px;
+    padding: 20px;
+}
+.portfolio-item
+{
+    transition: transform 1s;
+}
+.portfolio-item:hover
+{
+    background-color: white;
+    transform: scale(1.1);
+}
+.portfolio-icon
+{
+    transition: transform 2s;
+}
+ .portfolio-item:hover .portfolio-icon
+ {
+    transform: scale(1.2);
+ } 
+
+ .feedback h2 
+ {
+     font-size: 30px;
+     font-weight: 800;
+     line-height: 30px;
+     text-transform: capitalize;
+ }
+
+ .carousel-feedback
+ {
+    background-color: whitesmoke;
+    width: 70%;
+    display: flex;
+    margin: auto;
+
+ }
+
+ .carousel-feedback::after
+ {
+    border-color: var(--main-color) rgba(0, 0, 0, 0 ) rgba(0, 0, 0, 0 );
+    border-style: solid;
+    border-width: 200px;
+    content: "";
+    height: 72px;
+    left: -199px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 77px;
+   
+ }
+ .feedback-img
+ {
+    z-index:2;
+   padding-right: 0;
+   width: 50%;
+
+   
+    text-align: center;
+ }
+ .feedback-img img 
+ {
+    width: 60%;
+    z-index: 999;
+ }
+
+ .feedback-caption
+ {
+    z-index: 3;
+ }
+ .feedback-caption a 
+ {
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+ }
+ .feedback-caption p
+ {
+    font-style: italic;
+    color: #555555 ;
+    
+    font-size: 18px;
+ }
+.rate
+{
+    color: #f1c30d;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    text-indent: 0;
+    padding: 1px;
+    background-color: #f30534;
+    margin: 5px
+
+}
+.blog
+{
+    background-color: whitesmoke;
+}
+
+
+.blog h2 
+{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.blog-caption span
+{
+font-size: 18px;
+color: #555555;
+}
+.blog-caption a 
+{
+    
+    color: #555555;
+    padding: 5px;
+    font-size: 19px;
+    text-align: center;
+ 
+}
+
+.blog-caption p 
+{
+    color: #555555;
+    font-size: 18px;
+}
+
+.contact h2 
+{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.inputs
+{
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+   
+}
+.inputs input 
+{
+    width: 50%;
+}
+.btn-main
+{
+    background-color: var(--main-color);
+    color: white;
+   
+}
+.btn-main:hover
+{
+    background-color: #f30534;
+    color: white;
+}
+.footer
+{
+    background-color: #313131;
+}
+
+.footer-icons i 
+{
+    margin-right: 25px;
+   
+    
+}
+.footer-icons i:hover
+{
+    color: var(--main-color);
+}
+
+.footer-icons a
+{
+color: var(--main-color);
+}
+.footer-icons a:hover
+{
+color: #ff3a62 ; 
+}
